@@ -5,25 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning React</title>
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div id="root"></div>
-  </body>
+    <div id="root">React not rendered.</div>
 
-  <script
+    <script
     crossorigin
     src="https://unpkg.com/react@18/umd/react.development.js"
-  ></script>
-  <script
-    crossorigin
-    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-  ></script>
-  <script>
+    ></script>
+    <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
 
-    // const heading = React.createElement(tag to create, object, content/text inside tag)
-    const heading = React.createElement("h1", {}, "Learning React!");
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(heading);
+    <!-- Script code for React should be after importing the React CDN otherwise won't render due to React not defined -->
+    <script src="app.js"></script>
 
-  </script>
+  </body>
 </html>
