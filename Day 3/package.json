@@ -1,13 +1,16 @@
 {
-  "name": "react_learning",
+  "name": "day-3",
   "version": "1.0.0",
-  "description": "Learning React through practice, experiment and projects.",
+  "description": "Learning React Day 3",
+  "main": "app.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sjain97/React_Learning.git"
+    "url": "git+ssh://git@github.com/Sjain97/React_Learning.git"
   },
   "author": "Shubham Jain",
   "license": "ISC",
@@ -22,5 +25,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 5 versions"
+  ]
 }
