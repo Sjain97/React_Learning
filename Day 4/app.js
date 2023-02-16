@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 const Title = () => <h1>Hello React</h1>;
+const heading2 = <h2>Hello Part 2</h2>;
 
 const container = (
-  <div>
+  <>
     <Title />
+    {heading2}
     <h2>Understanding JSX</h2>
-  </div>
+  </>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
